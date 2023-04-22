@@ -1,14 +1,22 @@
 
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
-    read-timeout: 3000
-    connect-timeout: 3000
+    read-timeout: 16000
+    connect-timeout: 16000
   urls:
     base-url: https://api.openai.com/v1
     chat-url: /chat/completions
     create-transcription-url: /audio/transcriptions
 
 server.port: 9027
+
+spring:
+  banner:
+    location: classpath:banner/banner.txt
+    image:
+     location: classpath:fotocreador/microservicios.png
+  application:
+    name: singularidad
