@@ -1,6 +1,6 @@
 
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
