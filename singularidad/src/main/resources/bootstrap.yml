@@ -1,6 +1,21 @@
-
+server:
+  port: ${PORT:${SERVER_PORT:0}} 
+spring:
+  application:
+    name: singularidad
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:7000    
+      label: master
+     # uri: ${CONFIG_SERVER_URI://localhost:7000}
+  banner:
+    location: classpath:banner/banner.txt
+    image:
+     location: classpath:fotocreador/microservicios.png  
+     
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
@@ -9,14 +24,4 @@ openai-service:
   urls:
     base-url: https://api.openai.com/v1
     chat-url: /chat/completions
-    create-transcription-url: /audio/transcriptions
-
-server.port: 9027
-
-spring:
-  banner:
-    location: classpath:banner/banner.txt
-    image:
-     location: classpath:fotocreador/microservicios.png
-  application:
-    name: singularidad
+    create-transcription-url: /audio/transcriptions  

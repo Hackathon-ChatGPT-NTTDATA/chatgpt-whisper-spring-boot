@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping(value = "/api/v1")
+//@RequestMapping(value = "/api/v1")
 @Slf4j
 public class OpenAiClientController {
 
