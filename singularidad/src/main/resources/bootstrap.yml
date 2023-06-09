@@ -15,7 +15,7 @@ spring:
      location: classpath:fotocreador/microservicios.png  
      
 openai-service:
-  api-key: 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
+  api-key: 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
   gpt-model: gpt-3.5-turbo
   audio-model: whisper-1
   http-client:
