@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: hackathonchatgptnttdatachatgptwhisperspringboot 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hackathonchatgptnttdatachatgptwhisperspringboot
+  template:
+    metadata:
+      labels:
+        app: hackathonchatgptnttdatachatgptwhisperspringboot 
+    spec:
+      containers:
+        - name: hackathonchatgptnttdatachatgptwhisperspringboot 
+          image: acrcoderpath.azurecr.io/hackathonchatgptnttdatachatgptwhisperspringboot
+          ports:
+          - containerPort: 80
